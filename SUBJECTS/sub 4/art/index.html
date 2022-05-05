@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Образотворче мистецтво</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      background: url(bg1.jpg);
+    }
+    .header{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .content{
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .books{
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .books-block{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 210px;
+      height: 250px;
+      background: #ffff9e;
+      border-radius: 30px;
+    }
+     img{
+      max-width: 210px;
+      max-height: 290px;
+      border-radius: 30px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid black;
+    }
+    
+    .card{
+      padding: 15px 50px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      max-width: 350px;
+      
+      /* margin-right: 10px; */
+}
+.card-block{
+  margin-top: 90px;
+  margin-left: 10px;
+}
+.bg-yellow{
+    background-color: #ffff9e ;
+    
+    
+}
+.card h2{
+    margin-bottom: 10px ;
+    text-align: center;
+}
+.link-list li{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: blue;
+}
+
+a:visited{
+    color: grey;
+}
+
+  </style>
+</head>
+<body>
+    <div class="wraper">
+     
+      <div class="header">
+        <h1 class="header-text">Образотворче мистецтво</h1>
+        </div>
+      </div>
+      <div class="content">
+        <div class="books">
+          <div class="books-block">
+            <a href="Masol-Mystetstvo-4kl.pdf"><img src="art.jpg" alt=""></a>
+        </div>
+        <div class="books-block">
+            <a href="4-klas-mystetstvo-rublia-2021.pdf"><img src="art2.jpg" alt=""></a>
+        </div>
+      </div>
+      </div>
+
+      <div class="card-block">
+        <div class="card bg-yellow">
+          <h2>Корисні посилання</h2>
+          <ul class="link-list">
+            <li><a href="https://www.youtube.com/channel/UCBvaTzYlDfyUuIsgzZRxzcg?app=desktop" target="_blank">НУШ Дистанційні уроки Літвінцева Наталя</a></li>
+            <li><a href="https://vsimpptx.com/" target="_blank">ВСІМ pptx</a></li>
+            <li><a href="https://learningapps.org/" target="_blank">Learningapps</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
