@@ -105,7 +105,72 @@ a:active{
 a:visited{
     color: grey;
 }
-
+@media(max-width: 1250px){
+  .books{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+}
+@media(max-width: 992px){
+  .books{
+      display: grid;
+      grid-template-columns:auto auto auto;
+      grid-template-rows:auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list{
+      text-align: center;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
+@media(max-width: 750px){
+  .books{
+      display: grid;
+      grid-template-columns:auto auto;
+      grid-template-rows:auto auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list{
+      text-align: center;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
+@media(max-width: 500px){
+  .header-text{
+    font-size: 25px;
+  }
+  .books{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto auto auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
   </style>
 </head>
 <body>
@@ -123,7 +188,9 @@ a:visited{
         <div class="books-block">
           <a href="organized.pdf"><img src="organz.jpg" alt=""></a>
         </div>
-       
+        <div class="books-block">
+          <a href="consp-lit.pdf"><img src="consp-lit.jpg" alt=""></a>
+        </div>
       </div>
       </div>
 
