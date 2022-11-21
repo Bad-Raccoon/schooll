@@ -46,13 +46,14 @@
       justify-content: center;
       align-items: center;
       width: 210px;
-      height: 250px;
-      background: #ffff9e;
-      border-radius: 30px;
+      height: 280px;
+      /* background: #ffff9e; */
+      border-radius: 20px;
+      margin-bottom: 80px;
     }
      img{
-      max-width: 210px;
-      max-height: 290px;
+      width: 210px;
+      height: 290px;
       border-radius: 30px;
       width: 100%;
       height: 100%;
@@ -105,7 +106,72 @@ a:active{
 a:visited{
     color: grey;
 }
-
+@media(max-width: 1250px){
+  .books{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+}
+@media(max-width: 992px){
+  .books{
+      display: grid;
+      grid-template-columns:auto auto auto;
+      grid-template-rows:auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list{
+      text-align: center;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
+@media(max-width: 750px){
+  .books{
+      display: grid;
+      grid-template-columns:auto auto;
+      grid-template-rows:auto auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list{
+      text-align: center;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
+@media(max-width: 500px){
+  .header-text{
+    font-size: 25px;
+  }
+  .books{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto auto auto auto auto;
+      justify-content: space-around
+      /* justify-items: center; */
+    }
+    .card{
+      max-width: 100%;
+      margin: 20px;
+    }
+    .link-list li{
+      font-size: 20px;
+    }
+}
   </style>
 </head>
 <body>
